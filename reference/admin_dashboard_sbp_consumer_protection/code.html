@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f7f9fb", "on-tertiary-fixed": "#281800", "surface-tint": "#4c5f82", "on-surface": "#191c1e", "on-primary-container": "#798cb1", "on-primary-fixed-variant": "#344769", "surface-variant": "#e0e3e5", "tertiary-fixed-dim": "#e0c298", "outline-variant": "#c5c6cf", "primary-container": "#0f2444", "inverse-primary": "#b4c7ef", "surface-container-highest": "#e0e3e5", "surface-dim": "#d8dadc", "inverse-on-surface": "#eff1f3", "on-tertiary-container": "#a28761", "secondary-fixed-dim": "#b9c7df", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "tertiary-fixed": "#fedeb2", "secondary-fixed": "#d5e3fc", "error-container": "#ffdad6", "surface": "#f7f9fb", "on-primary-fixed": "#041b3b", "primary-fixed": "#d7e3ff", "background": "#f7f9fb", "on-error": "#ffffff", "tertiary": "#180d00", "surface-container": "#eceef0", "surface-container-lowest": "#ffffff", "inverse-surface": "#2d3133", "on-primary": "#ffffff", "outline": "#75777f", "on-error-container": "#93000a", "secondary": "#515f74", "primary": "#000e27", "surface-container-low": "#f2f4f6", "surface-container-high": "#e6e8ea", "on-secondary-fixed": "#0d1c2e", "on-tertiary": "#ffffff", "tertiary-container": "#322105", "on-secondary": "#ffffff", "on-surface-variant": "#44474e", "on-background": "#191c1e", "on-tertiary-fixed-variant": "#584323", "error": "#ba1a1a", "primary-fixed-dim": "#b4c7ef", "secondary-container": "#d5e3fc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "margin-sm": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-sm": "1rem" }, "fontFamily": { "headline-xl": [ "Inter" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Inter" ], "display-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "label-md": [ "Inter" ], "display-lg": [ "Inter" ], "legal-code": [ "JetBrains Mono" ], "headline-sm": [ "Inter" ] }, "fontSize": { "headline-xl": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "headline-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-xl-mobile": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "legal-code": [ "12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between pt-space-md pb-space-lg"><div class="flex flex-col"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="SBP Consumer Protection Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">State Bank of Pakistan</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">CPD Supervisor Console</span></div></div><div class="px-space-md mb-space-xs"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Audit &amp; Operations</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary text-on-primary font-semibold rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary text-on-primary font-semibold rounded-lg shadow-sm" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-lg">lock</span>Admin Regulatory Overview</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="dispute-tracking" href="#"><span class="material-symbols-outlined text-lg">gavel</span>Grievance Audit Ledger</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="assistant-chat" href="#"><span class="material-symbols-outlined text-lg">smart_toy</span>Case Resolution Engine</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">tune</span>Ordinance Policy Rules</a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrSZ-nOeiPSY96ip7ljiJT74oF19sLLc3gBPlj2Ng_rzZDXIDSXCJiD2Z5Cpx8KrwRtVszdelNSXlHeYKUURhSZniCSsM48SnL_IB2G-0n3Z5KB605gnEJ_HFigC8mMidI6OHdU7D5YWzLKL0DUa-Tpcqh-djfLt1UDv4JQSsMLxY_6-lhpR_n0kSuauALsfDWAUY5W7_DkqIFX1S7uEHmpVz7IG9wR1g92TK46BQl5UiE1AxJwehAQ"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Tariq M.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Regulatory Affairs</span></div></div><div class="px-space-xs"><span class="font-legal-code text-legal-code text-outline">CPD/2024-09 · SBP Core v2.4</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider px-space-xs py-0.5 bg-secondary-container text-on-secondary-container rounded font-semibold">Regulated Banking AI</span><span class="font-body-sm text-body-sm text-on-surface-variant">Sovereign Institutional Control Plane</span></div><div class="flex items-center gap-space-md"><button aria-label="Toggle color mode" class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="material-symbols-outlined text-lg block dark:hidden">dark_mode</span><span class="material-symbols-outlined text-lg hidden dark:block">light_mode</span></button><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-lg text-on-surface-variant"><span class="material-symbols-outlined text-sm text-primary">verified_user</span><span class="font-legal-code text-legal-code">SBP-SECURE</span></div></div></header><main class="w-full pt-20 bg-background min-h-screen px-space-xl py-space-lg"><div class="flex flex-col w-full gap-space-xl">
+<!-- Regulatory Breadcrumb & Session Banner -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm uppercase tracking-wider">
+<span>SBP Central Portal</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Consumer Protection Department (CPD)</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-semibold">AI Governance &amp; Model Ledger</span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Supervisory Intelligence Desk</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-legal-code text-legal-code font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          LIVE INGEST
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="bg-surface-container-low px-space-md py-space-xs rounded-lg flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg">calendar_today</span>
+<span class="font-legal-code text-legal-code text-on-surface font-medium" id="current-iso-timestamp">2024-10-28 · 14:42 PKT</span>
+</div>
+<button class="p-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant rounded-lg transition-colors shadow-sm flex items-center justify-center" onclick="refreshAuditStream()" type="button">
+<span class="material-symbols-outlined text-lg">refresh</span>
+</button>
+</div>
+</div>
+<!-- Top Metrics Bar (Bento-styled cards with hairline separation through contrast) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Total Inquiries Today</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">forum</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-semibold">14,892</span>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary font-body-sm">
+<span class="text-xs font-semibold px-1 py-0.2 rounded bg-surface-container-high text-on-surface">+18.4%</span>
+<span>vs previous banking day</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-space-md overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 76%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Confidence Threshold</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">tune</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-semibold">94.2%</span>
+<span class="font-legal-code text-legal-code text-on-surface-variant font-medium">/ 90% floor</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary font-body-sm">
+<span class="text-xs font-semibold px-1 py-0.2 rounded bg-secondary-container text-on-secondary-container">Optimal</span>
+
+</div>
+</div>
+<!-- Mini Sparkline inline SVG -->
+<div class="w-full mt-space-md">
+<svg class="w-full h-4 text-surface-tint" fill="none" preserveaspectratio="none" stroke="currentColor" viewbox="0 0 160 20">
+<path d="M0 16 L20 14 L40 15 L60 9 L80 11 L100 6 L120 7 L140 3 L160 4" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Low-Confidence Escalations</span>
+<span class="p-1.5 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">flag</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-semibold">38</span>
+<span class="font-label-sm text-label-sm font-semibold text-error uppercase">Action Required</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary font-body-sm">
+<span class="text-xs font-semibold px-1 py-0.2 rounded bg-error-container text-on-error-container font-legal-code">CRIT-E2</span>
+<span>Awaiting regulatory triage</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-space-md overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 32%"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Banking Mohtasib Filings</span>
+<span class="p-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">account_balance</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-semibold">124</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Direct Statutory Referrals</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs text-secondary font-body-sm">
+<span class="text-xs font-semibold px-1 py-0.2 rounded bg-surface-container-high text-on-surface font-legal-code">OMBUD-2024</span>
+<span>Section 82D, BCO 1962</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-space-md overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 48%"></div>
+</div>
+</div>
+</section>
+<!-- Section 1: Unanswered & Low-Confidence Queries -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">priority_high</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Unanswered &amp; Low-Confidence Queries</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Citizen submissions triggering intent fallbacks or dropping below the 80% confidence threshold requiring compliance sign-off.
+        </p>
+</div>
+<!-- Filters & Actions Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search Input -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="pl-9 pr-space-md py-space-xs bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all w-60" id="query-search-input" oninput="filterQueriesTable()" placeholder="Search query tokens..." type="text"/>
+</div>
+<!-- Bank Filter Dropdown -->
+<div class="relative">
+<select class="bg-surface-container-low text-on-surface font-body-sm text-body-sm px-space-md py-space-xs rounded-lg outline-none cursor-pointer focus:ring-2 focus:ring-primary appearance-none pr-8 transition-all" id="bank-filter-select" onchange="filterQueriesTable()">
+<option value="ALL">All Scheduled Banks</option>
+<option value="HBL">Habib Bank Limited (HBL)</option>
+<option value="UBL">United Bank Limited (UBL)</option>
+<option value="Meezan">Meezan Bank Limited</option>
+<option value="MCB">MCB Bank Limited</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-xs top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative">
+<select class="bg-surface-container-low text-on-surface font-body-sm text-body-sm px-space-md py-space-xs rounded-lg outline-none cursor-pointer focus:ring-2 focus:ring-primary appearance-none pr-8 transition-all" id="status-filter-select" onchange="filterQueriesTable()">
+<option value="ALL">All Statuses</option>
+<option value="PENDING">Pending Review</option>
+<option value="RESOLVED">Resolved Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-xs top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Batch Action Button -->
+<button class="px-space-md py-space-xs bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-space-xs shadow-sm hover:bg-primary-container transition-colors" onclick="batchMarkResolved()" type="button">
+<span class="material-symbols-outlined text-base">done_all</span>
+          Resolve Selected
+        </button>
+</div>
+</div>
+<!-- Data Ledger Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="queries-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-md px-space-lg w-12 text-center">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" id="select-all-checkbox" onchange="toggleSelectAll(this)" type="checkbox"/>
+</th>
+<th class="py-space-md px-space-md min-w-[340px]">User Query Text</th>
+<th class="py-space-md px-space-md min-w-[190px]">Top Matched Intent</th>
+<th class="py-space-md px-space-md min-w-[150px]">Confidence</th>
+<th class="py-space-md px-space-md min-w-[320px]">Regulatory Note / Statutory Memo</th>
+<th class="py-space-md px-space-md text-right pr-space-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y-0" id="queries-table-body">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-bank="UBL" data-resolved="false">
+<td class="py-space-md px-space-lg text-center align-top">
+<input class="row-checkbox rounded accent-primary w-4 h-4 cursor-pointer mt-1" onchange="updateRowState(this)" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-snug">"Can digital wallet deduct Dormancy fee without 30-day registered notice?"</span>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-legal-code text-legal-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">UBL · Omni/App</span>
+<span class="text-outline font-legal-code text-legal-code">TX-902188</span>
+<span class="text-on-surface-variant text-xs">Today, 13:08 PKT</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 font-legal-code text-legal-code px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  fee.dormancy_charges
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-xs">warning</span>
+                  42% - Low
+                </div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container-low px-space-sm py-1.5 rounded-lg text-xs font-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Add compliance memo / SBP circular reference..." type="text" value="Ref: BPRD Circular No. 02 of 2018 (Section 4b - Pre-notification mandatory)."/>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-secondary transition-colors" onclick="saveRegulatoryNote(this)" title="Save Memo" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right pr-space-lg">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-xs py-1 rounded text-xs font-label-md font-semibold text-secondary hover:text-primary hover:bg-surface-container-high transition-colors" onclick="escalateToOmbudsman('TX-902188')" title="Escalate to Ombudsman" type="button">
+                    Refer Mohtasib
+                  </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-bank="HBL" data-resolved="false">
+<td class="py-space-md px-space-lg text-center align-top">
+<input class="row-checkbox rounded accent-primary w-4 h-4 cursor-pointer mt-1" onchange="updateRowState(this)" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-snug">"My ATM card retained in machine due to power cut, branch refuses replacement without Rs. 1,200 urgent card levy."</span>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-legal-code text-legal-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">HBL · Branch 0419</span>
+<span class="text-outline font-legal-code text-legal-code">TX-902144</span>
+<span class="text-on-surface-variant text-xs">Today, 12:44 PKT</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 font-legal-code text-legal-code px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  card.replacement_fee
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-xs">error_outline</span>
+                  58% - Medium
+                </div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container-low px-space-sm py-1.5 rounded-lg text-xs font-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Add compliance memo / SBP circular reference..." type="text"/>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-secondary transition-colors" onclick="saveRegulatoryNote(this)" title="Save Memo" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right pr-space-lg">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-xs py-1 rounded text-xs font-label-md font-semibold text-secondary hover:text-primary hover:bg-surface-container-high transition-colors" onclick="escalateToOmbudsman('TX-902144')" type="button">
+                    Refer Mohtasib
+                  </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-bank="Meezan" data-resolved="false">
+<td class="py-space-md px-space-lg text-center align-top">
+<input class="row-checkbox rounded accent-primary w-4 h-4 cursor-pointer mt-1" onchange="updateRowState(this)" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-snug">"Is charity fund deduction on delayed Murabaha installment allowed after 15th of month if pay date fell on Sunday?"</span>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-legal-code text-legal-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">Meezan · Islamic Ops</span>
+<span class="text-outline font-legal-code text-legal-code">TX-901992</span>
+<span class="text-on-surface-variant text-xs">Today, 11:15 PKT</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 font-legal-code text-legal-code px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  islamic.murabaha_charity
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-xs">warning</span>
+                  36% - Low
+                </div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container-low px-space-sm py-1.5 rounded-lg text-xs font-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Add compliance memo / SBP circular reference..." type="text" value=""/>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-secondary transition-colors" onclick="saveRegulatoryNote(this)" title="Save Memo" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right pr-space-lg">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-xs py-1 rounded text-xs font-label-md font-semibold text-secondary hover:text-primary hover:bg-surface-container-high transition-colors" onclick="escalateToOmbudsman('TX-901992')" type="button">
+                    Refer Mohtasib
+                  </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-bank="MCB" data-resolved="false">
+<td class="py-space-md px-space-lg text-center align-top">
+<input class="row-checkbox rounded accent-primary w-4 h-4 cursor-pointer mt-1" onchange="updateRowState(this)" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface leading-snug">"Can bank freeze primary salary account because biometric renewal was delayed while posted abroad on state duty?"</span>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-legal-code text-legal-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">MCB · Retail Cluster</span>
+<span class="text-outline font-legal-code text-legal-code">TX-901840</span>
+<span class="text-on-surface-variant text-xs">Today, 09:50 PKT</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 font-legal-code text-legal-code px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  kyc.biometric_freeze
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-xs">error_outline</span>
+                  51% - Medium
+                </div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container-low px-space-sm py-1.5 rounded-lg text-xs font-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Add compliance memo / SBP circular reference..." type="text"/>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-secondary transition-colors" onclick="saveRegulatoryNote(this)" title="Save Memo" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right pr-space-lg">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-xs py-1 rounded text-xs font-label-md font-semibold text-secondary hover:text-primary hover:bg-surface-container-high transition-colors" onclick="escalateToOmbudsman('TX-901840')" type="button">
+                    Refer Mohtasib
+                  </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 (Resolved Example) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group opacity-70" data-bank="HBL" data-resolved="true">
+<td class="py-space-md px-space-lg text-center align-top">
+<input checked="" class="row-checkbox rounded accent-primary w-4 h-4 cursor-pointer mt-1" onchange="updateRowState(this)" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface line-through leading-snug">"Are online fund transfer interbank charges capped under PRISM 2.0?"</span>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<span class="font-legal-code text-legal-code px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-medium">HBL · Konnect</span>
+<span class="text-outline font-legal-code text-legal-code">TX-901720</span>
+<span class="text-on-surface-variant text-xs">Today, 08:32 PKT</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<span class="inline-flex items-center gap-1 font-legal-code text-legal-code px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  transfer.ibft_charges
+                </span>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                  88% - Verified
+                </div>
+</td>
+<td class="py-space-md px-space-md align-top">
+<div class="flex items-center gap-space-xs">
+<input class="w-full bg-surface-container-low px-space-sm py-1.5 rounded-lg text-xs font-body-sm text-on-surface-variant outline-none" disabled="" type="text" value="Resolved via SBP Circular PSD 02/2021 (Free threshold up to Rs 25,000/mo)."/>
+<span class="material-symbols-outlined text-primary text-base p-1">verified</span>
+</div>
+</td>
+<td class="py-space-md px-space-md align-top text-right pr-space-lg">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-secondary px-space-xs py-1 rounded bg-surface-container">Resolved</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span>Showing</span>
+<span class="font-semibold text-on-surface">1 - 5</span>
+<span>of 38 pending items</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-outline font-label-md cursor-not-allowed" disabled="" type="button">Previous</button>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-md" type="button">1</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md hover:bg-surface-container-high transition-colors" type="button">2</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md hover:bg-surface-container-high transition-colors" type="button">3</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md hover:bg-surface-container-high transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Intent & Response Governance -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">gavel</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Intent &amp; Response Governance</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Ordinance-grounded canonical answers and verified utterance corpora maintained under the Banking Companies Ordinance (1962).
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-colors" onclick="openAddIntentModal()" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+          Add New Intent
+        </button>
+</div>
+</div>
+<!-- Intent Governance Cards Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-space-lg" id="intent-cards-container">
+<!-- Card 1: dispute.unauthorized_debit -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between relative overflow-hidden" id="card-unauthorized-debit">
+<div class="flex flex-col gap-space-md">
+<!-- Intent Header & Badges -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-legal-code text-legal-code font-semibold px-space-sm py-0.5 rounded bg-primary text-on-primary">
+                  dispute.unauthorized_debit
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  STRICT_STATUTE
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Triggered for unauthorized Electronic Fund Transfers (EFT), skimming, and unauthorized card debits.
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-legal-code text-legal-code text-outline">v3.8</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</button>
+</div>
+</div>
+<!-- Canonical Response Container with Left Accent Rail -->
+<div class="bg-surface-container-low p-space-md rounded-lg relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-fixed-dim"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+                Binding Canonical Response (SBP Core)
+              </span>
+<span class="font-legal-code text-legal-code text-outline">BCO 1962 · CPD-03</span>
+</div>
+
+</div>
+<!-- Training Utterances & Corpus -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+                Active Training Utterances (3 Verified)
+              </span>
+<span class="font-legal-code text-legal-code text-outline">Embedding Cosine: 0.91</span>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="tags-unauthorized-debit">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+<span>ATM cash not dispensed</span>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center" onclick="removeTrainingTag(this)" type="button">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+<span>Account hacked via OTP scam</span>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center" onclick="removeTrainingTag(this)" type="button">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+<span>POS duplicate swipe deduction</span>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center" onclick="removeTrainingTag(this)" type="button">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</span>
+</div>
+</div>
+</div>
+<!-- Inline Quick-Add Training Example -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs">
+<input class="flex-1 bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" id="input-unauthorized-debit" onkeydown="if(event.key==='Enter') addTrainingExample('tags-unauthorized-debit', 'input-unauthorized-debit')" placeholder="Add training example (e.g. 'Money deducted but Raast shows failure')..." type="text"/>
+<button class="px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center gap-1" onclick="addTrainingExample('tags-unauthorized-debit', 'input-unauthorized-debit')" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+            Add
+          </button>
+</div>
+</div>
+<!-- Card 2: fee.schedule_of_charges -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between relative overflow-hidden" id="card-schedule-charges">
+<div class="flex flex-col gap-space-md">
+<!-- Intent Header & Badges -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-legal-code text-legal-code font-semibold px-space-sm py-0.5 rounded bg-primary text-on-primary">
+                  fee.schedule_of_charges
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  MANDATORY_DISCLOSURE
+                </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Handles consumer inquiries regarding seasonal SOCs, hidden deductions, and non-notified fee hikes.
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-legal-code text-legal-code text-outline">v2.1</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</button>
+</div>
+</div>
+<!-- Canonical Response Container with Left Accent Rail -->
+<div class="bg-surface-container-low p-space-md rounded-lg relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-fixed-dim"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+                Binding Canonical Response (SBP Core)
+              </span>
+<span class="font-legal-code text-legal-code text-outline">BPRD Circ. 04</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              "All scheduled commercial banks must publish bi-annual SOCs approved by SBP. Unlisted levies are strictly ultra vires, and unapproved tariff increases must be refunded within 14 calendar days upon customer protest."
+            </p>
+</div>
+<!-- Training Utterances & Corpus -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+                Active Training Utterances (2 Verified)
+              </span>
+<span class="font-legal-code text-legal-code text-outline">Embedding Cosine: 0.89</span>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="tags-schedule-charges">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+<span>SMS alert charge dispute</span>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center" onclick="removeTrainingTag(this)" type="button">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+<span>Locker annual rent hike</span>
+<button class="text-on-surface-variant hover:text-error transition-colors flex items-center" onclick="removeTrainingTag(this)" type="button">
+<span class="material-symbols-outlined text-xs">close</span>
+</button>
+</span>
+</div>
+</div>
+</div>
+<!-- Inline Quick-Add Training Example -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs">
+<input class="flex-1 bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" id="input-schedule-charges" onkeydown="if(event.key==='Enter') addTrainingExample('tags-schedule-charges', 'input-schedule-charges')" placeholder="Add training example (e.g. 'Debit card renewal cost increased without notification')..." type="text"/>
+<button class="px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center gap-1" onclick="addTrainingExample('tags-schedule-charges', 'input-schedule-charges')" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+            Add
+          </button>
+</div>
+</div>
+</div>
+<!-- Governance Actions & Compliance Audit Strip -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest text-primary shadow-sm">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">SBP Assistant Sovereign Weights &amp; Balance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last model checkpoint deployed 4 hours ago. Current training loss: 0.0421.</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-lg py-space-sm bg-primary text-on-primary hover:bg-primary-container rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs shadow-sm transition-all" id="retrain-button" onclick="triggerRetrain()" type="button">
+<span class="material-symbols-outlined text-lg" id="retrain-icon">autorenew</span>
+<span>Retrain Assistant Model</span>
+</button>
+<div class="relative inline-block text-left" id="export-dropdown-wrapper">
+<button class="px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container text-primary rounded-lg font-label-md text-label-md font-semibold flex items-center gap-space-xs shadow-sm transition-colors" onclick="toggleExportMenu()" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+            Export Audit Log (PDF/CSV)
+            <span class="material-symbols-outlined text-sm">arrow_drop_down</span>
+</button>
+<!-- Hidden Export Flyout -->
+<div class="hidden absolute right-0 bottom-full mb-2 w-56 rounded-lg bg-surface-container-lowest shadow-xl z-30 p-space-xs" id="export-menu">
+<button class="w-full text-left px-space-md py-space-xs rounded font-body-sm text-body-sm hover:bg-surface-container text-on-surface flex items-center gap-space-xs" onclick="exportFile('PDF')" type="button">
+<span class="material-symbols-outlined text-base text-error">picture_as_pdf</span>
+              Certified Audit Dossier (PDF)
+            </button>
+<button class="w-full text-left px-space-md py-space-xs rounded font-body-sm text-body-sm hover:bg-surface-container text-on-surface flex items-center gap-space-xs" onclick="exportFile('CSV')" type="button">
+<span class="material-symbols-outlined text-base text-secondary">table_chart</span>
+              Raw Telemetry Ledger (CSV)
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Add New Regulatory Intent -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-space-md" id="add-intent-modal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-xl shadow-xl overflow-hidden flex flex-col">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">add_box</span>
+<span class="font-headline-sm text-headline-sm text-primary">Draft New Regulatory Intent</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary" onclick="closeAddIntentModal()" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<form class="p-space-lg flex flex-col gap-space-md" id="new-intent-form" onsubmit="handleCreateIntent(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Intent Identifier</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-legal-code text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all" id="modal-intent-id" placeholder="e.g. dispute.raast_p2p_failure" required="" type="text"/>
+<span class="text-xs text-outline">Use lowercase dot-notation compliant with CPD-AI schema v2.</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Statutory Reference &amp; Circular</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all" id="modal-intent-circular" placeholder="e.g. SBP Circular No. PSD/01/2023 - Raast Instant Settlement" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Binding Canonical Response</label>
+<textarea class="bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all resize-none" id="modal-intent-response" placeholder="Enter legally approved text delivered verbatim to citizens..." required="" rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Initial Seed Utterances (Comma separated)</label>
+<input class="bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary transition-all" id="modal-intent-utterances" placeholder="Raast transferred but recipient got nothing, instant payment stuck, money debited in Raast" type="text"/>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-secondary hover:bg-surface-container-high transition-colors" onclick="closeAddIntentModal()" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-space-xs bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-sm" type="submit">
+            Publish Intent to Model
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Micro-notification Toast -->
+<div class="fixed bottom-space-lg right-space-xl z-50 bg-primary text-on-primary px-space-lg py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm transition-all transform translate-y-20 opacity-0 pointer-events-none" id="admin-toast">
+<span class="material-symbols-outlined text-lg text-tertiary-fixed">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-message">Record saved successfully</span>
+</div>
+</div>
+<script>
+  // UI Notification helper
+  function showToast(msg) {
+    const toast = document.getElementById('admin-toast');
+    const label = document.getElementById('toast-message');
+    if (!toast || !label) return;
+    label.innerText = msg;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 3200);
+  }
+
+  // Refresh live feed simulation
+  function refreshAuditStream() {
+    const now = new Date();
+    const timeStr = now.toISOString().slice(0, 10) + ' · ' + now.toTimeString().slice(0, 5) + ' PKT';
+    document.getElementById('current-iso-timestamp').innerText = timeStr;
+    showToast('Telemetry re-synced with State Bank node cluster.');
+  }
+
+  // Search & Filter queries table
+  function filterQueriesTable() {
+    const searchTerm = (document.getElementById('query-search-input').value || '').toLowerCase();
+    const bankFilter = document.getElementById('bank-filter-select').value;
+    const statusFilter = document.getElementById('status-filter-select').value;
+    const rows = document.querySelectorAll('#queries-table-body tr');
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const bank = row.getAttribute('data-bank');
+      const isResolved = row.getAttribute('data-resolved') === 'true';
+
+      const matchesSearch = text.includes(searchTerm);
+      const matchesBank = (bankFilter === 'ALL') || (bank === bankFilter);
+      const matchesStatus = (statusFilter === 'ALL') ||
+                            (statusFilter === 'PENDING' && !isResolved) ||
+                            (statusFilter === 'RESOLVED' && isResolved);
+
+      if (matchesSearch && matchesBank && matchesStatus) {
+        row.classList.remove('hidden');
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+  }
+
+  // Toggle select all checkboxes
+  function toggleSelectAll(masterCheckbox) {
+    const checkboxes = document.querySelectorAll('#queries-table-body .row-checkbox');
+    checkboxes.forEach(cb => {
+      cb.checked = masterCheckbox.checked;
+      updateRowState(cb);
+    });
+  }
+
+  // Checkbox row state styling
+  function updateRowState(cb) {
+    const tr = cb.closest('tr');
+    if (!tr) return;
+    if (cb.checked) {
+      tr.setAttribute('data-resolved', 'true');
+      tr.classList.add('opacity-70');
+      const textSpan = tr.querySelector('td:nth-child(2) span');
+      if (textSpan) textSpan.classList.add('line-through');
+    } else {
+      tr.setAttribute('data-resolved', 'false');
+      tr.classList.remove('opacity-70');
+      const textSpan = tr.querySelector('td:nth-child(2) span');
+      if (textSpan) textSpan.classList.remove('line-through');
+    }
+  }
+
+  // Batch Resolve
+  function batchMarkResolved() {
+    const selected = document.querySelectorAll('#queries-table-body .row-checkbox:checked');
+    if (selected.length === 0) {
+      showToast('No inquiries selected in current view.');
+      return;
+    }
+    selected.forEach(cb => updateRowState(cb));
+    showToast(selected.length + ' inquiries marked as legally cleared.');
+  }
+
+  // Save regulatory note memo
+  function saveRegulatoryNote(button) {
+    const input = button.previousElementSibling;
+    if (input && input.value.trim().length > 0) {
+      button.classList.remove('bg-surface-container', 'text-secondary');
+      button.classList.add('bg-primary', 'text-on-primary');
+      showToast('Compliance memo archived to regulatory ledger.');
+    } else {
+      showToast('Please type a valid circular or ordinance note before saving.');
+    }
+  }
+
+  // Escalation flow
+  function escalateToOmbudsman(txId) {
+    showToast('Direct docket opened for Banking Mohtasib under ref #' + txId);
+  }
+
+  // Dynamic tag removal
+  function removeTrainingTag(btn) {
+    const tagEl = btn.closest('span');
+    if (tagEl) {
+      tagEl.remove();
+      showToast('Utterance detached from inference weights.');
+    }
+  }
+
+  // Dynamic quick-add training utterance
+  function addTrainingExample(containerId, inputId) {
+    const container = document.getElementById(containerId);
+    const input = document.getElementById(inputId);
+    if (!input || !container) return;
+    const value = input.value.trim();
+    if (!value) return;
+
+    const newTag = document.createElement('span');
+    newTag.className = 'inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-secondary-container text-on-secondary-container font-body-sm text-xs transition-all';
+    newTag.innerHTML = `
+      <span>${escapeHtml(value)}</span>
+      <button type="button" onclick="removeTrainingTag(this)" class="text-on-secondary-container hover:text-error transition-colors flex items-center">
+        <span class="material-symbols-outlined text-xs">close</span>
+      </button>
+    `;
+    container.appendChild(newTag);
+    input.value = '';
+    showToast('Training utterance staged for retraining batch.');
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/[&<>"']/g, function(m) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m];
+    });
+  }
+
+  // Retrain Trigger Simulation
+  function triggerRetrain() {
+    const btn = document.getElementById('retrain-button');
+    const icon = document.getElementById('retrain-icon');
+    if (!btn || !icon) return;
+
+    icon.classList.add('animate-spin');
+    btn.disabled = true;
+    showToast('Dispatching retraining payload to SBP high-security LLM cluster...');
+
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      btn.disabled = false;
+      showToast('Assistant model v3.9 compiled and verified against BCO 1962.');
+    }, 2800);
+  }
+
+  // Export dropdown
+  function toggleExportMenu() {
+    const menu = document.getElementById('export-menu');
+    if (menu) menu.classList.toggle('hidden');
+  }
+
+  function exportFile(format) {
+    toggleExportMenu();
+    showToast('Generating official SBP ' + format + ' compliance export...');
+    setTimeout(() => {
+      showToast('Downloaded SBP_CPD_AuditLedger_' + new Date().toISOString().slice(0,10) + '.' + format.toLowerCase());
+    }, 1200);
+  }
+
+  // Modal handlers
+  function openAddIntentModal() {
+    document.getElementById('add-intent-modal').classList.remove('hidden');
+  }
+
+  function closeAddIntentModal() {
+    document.getElementById('add-intent-modal').classList.add('hidden');
+  }
+
+  function handleCreateIntent(e) {
+    e.preventDefault();
+    const intentId = document.getElementById('modal-intent-id').value.trim();
+    const circular = document.getElementById('modal-intent-circular').value.trim();
+    const response = document.getElementById('modal-intent-response').value.trim();
+    const utterances = document.getElementById('modal-intent-utterances').value.split(',').map(s => s.trim()).filter(Boolean);
+
+    const container = document.getElementById('intent-cards-container');
+    const newCard = document.createElement('div');
+    newCard.className = 'bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between relative overflow-hidden';
+    
+    let tagsHtml = utterances.map(u => `
+      <span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-body-sm text-xs">
+        <span>${escapeHtml(u)}</span>
+        <button type="button" onclick="removeTrainingTag(this)" class="text-on-surface-variant hover:text-error transition-colors flex items-center">
+          <span class="material-symbols-outlined text-xs">close</span>
+        </button>
+      </span>
+    `).join('');
+
+    const randomInputId = 'input-' + Math.random().toString(36).substring(7);
+    const randomTagsId = 'tags-' + Math.random().toString(36).substring(7);
+
+    newCard.innerHTML = `
+      <div class="flex flex-col gap-space-md">
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-space-xs">
+              <span class="font-legal-code text-legal-code font-semibold px-space-sm py-0.5 rounded bg-primary text-on-primary">
+                ${escapeHtml(intentId)}
+              </span>
+              <span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                DRAFT_STATUTE
+              </span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Statutory intent registered via Supervisory Console.
+            </span>
+          </div>
+          <div class="flex items-center gap-space-xs">
+            <span class="font-legal-code text-legal-code text-outline">v1.0</span>
+            <button type="button" class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-lg">edit_note</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-low p-space-md rounded-lg relative overflow-hidden">
+          <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-fixed-dim"></div>
+          <div class="flex items-center justify-between mb-space-xs">
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+              Binding Canonical Response (SBP Core)
+            </span>
+            <span class="font-legal-code text-legal-code text-outline">${escapeHtml(circular)}</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "${escapeHtml(response)}"
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center justify-between">
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+              Active Training Utterances (${utterances.length} Seeded)
+            </span>
+            <span class="font-legal-code text-legal-code text-outline">Embedding Cosine: 0.95</span>
+          </div>
+          <div class="flex flex-wrap gap-space-xs" id="${randomTagsId}">
+            ${tagsHtml}
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-space-md pt-space-sm flex items-center gap-space-xs">
+        <input
+          type="text"
+          placeholder="Add training example..."
+          class="flex-1 bg-surface-container-low px-space-md py-space-xs rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all"
+          id="${randomInputId}"
+          onkeydown="if(event.key==='Enter') addTrainingExample('${randomTagsId}', '${randomInputId}')"
+        />
+        <button
+          type="button"
+          onclick="addTrainingExample('${randomTagsId}', '${randomInputId}')"
+          class="px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center gap-1"
+        >
+          <span class="material-symbols-outlined text-base">add</span>
+          Add
+        </button>
+      </div>
+    `;
+
+    container.prepend(newCard);
+    closeAddIntentModal();
+    document.getElementById('new-intent-form').reset();
+    showToast('New intent ' + intentId + ' published to governance schema.');
+  }
+
+  // Close dropdown on outside click
+  window.addEventListener('click', function(e) {
+    const wrapper = document.getElementById('export-dropdown-wrapper');
+    const menu = document.getElementById('export-menu');
+    if (wrapper && menu && !wrapper.contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+</script></main></div></body></html>

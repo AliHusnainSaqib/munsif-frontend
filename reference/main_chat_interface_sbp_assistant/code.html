@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f7f9fb", "on-tertiary-fixed": "#281800", "surface-tint": "#4c5f82", "on-surface": "#191c1e", "on-primary-container": "#798cb1", "on-primary-fixed-variant": "#344769", "surface-variant": "#e0e3e5", "tertiary-fixed-dim": "#e0c298", "outline-variant": "#c5c6cf", "primary-container": "#0f2444", "inverse-primary": "#b4c7ef", "surface-container-highest": "#e0e3e5", "surface-dim": "#d8dadc", "inverse-on-surface": "#eff1f3", "on-tertiary-container": "#a28761", "secondary-fixed-dim": "#b9c7df", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "tertiary-fixed": "#fedeb2", "secondary-fixed": "#d5e3fc", "error-container": "#ffdad6", "surface": "#f7f9fb", "on-primary-fixed": "#041b3b", "primary-fixed": "#d7e3ff", "background": "#f7f9fb", "on-error": "#ffffff", "tertiary": "#180d00", "surface-container": "#eceef0", "surface-container-lowest": "#ffffff", "inverse-surface": "#2d3133", "on-primary": "#ffffff", "outline": "#75777f", "on-error-container": "#93000a", "secondary": "#515f74", "primary": "#000e27", "surface-container-low": "#f2f4f6", "surface-container-high": "#e6e8ea", "on-secondary-fixed": "#0d1c2e", "on-tertiary": "#ffffff", "tertiary-container": "#322105", "on-secondary": "#ffffff", "on-surface-variant": "#44474e", "on-background": "#191c1e", "on-tertiary-fixed-variant": "#584323", "error": "#ba1a1a", "primary-fixed-dim": "#b4c7ef", "secondary-container": "#d5e3fc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "margin-sm": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-sm": "1rem" }, "fontFamily": { "headline-xl": [ "Inter" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Inter" ], "display-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "label-md": [ "Inter" ], "display-lg": [ "Inter" ], "legal-code": [ "JetBrains Mono" ], "headline-sm": [ "Inter" ] }, "fontSize": { "headline-xl": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "headline-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-xl-mobile": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "legal-code": [ "12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="SBP Consumer Protection Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">State Bank of Pakistan</span><span class="font-label-sm text-label-sm uppercase tracking-wider px-space-xs py-0.5 bg-secondary-container text-on-secondary-container rounded font-semibold">Regulated Banking AI</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Consumer Protection Assistant</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container rounded-lg" data-active-classes="bg-primary text-on-primary font-semibold rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary text-on-primary font-semibold rounded-lg shadow-sm" data-path="assistant-chat" href="#">Assistant Chat</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="dispute-tracking" href="#">Dispute Tracking</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="settings" href="#">Settings</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="admin-portal" href="#">Admin Portal</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle color mode" class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="material-symbols-outlined text-lg block dark:hidden">dark_mode</span><span class="material-symbols-outlined text-lg hidden dark:block">light_mode</span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrSZ-nOeiPSY96ip7ljiJT74oF19sLLc3gBPlj2Ng_rzZDXIDSXCJiD2Z5Cpx8KrwRtVszdelNSXlHeYKUURhSZniCSsM48SnL_IB2G-0n3Z5KB605gnEJ_HFigC8mMidI6OHdU7D5YWzLKL0DUa-Tpcqh-djfLt1UDv4JQSsMLxY_6-lhpR_n0kSuauALsfDWAUY5W7_DkqIFX1S7uEHmpVz7IG9wR1g92TK46BQl5UiE1AxJwehAQ"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Tariq M.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Regulatory Affairs</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin-sm lg:px-margin py-space-md">
+<!-- Top System Alert / Regulatory Audit Status Banner -->
+<div class="w-full mb-space-md bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-legal-code text-legal-code text-on-surface uppercase tracking-wider font-semibold">Active Session: SBP-CPD-2024-88412</span>
+<span class="hidden md:inline text-outline-variant font-legal-code text-legal-code">•</span>
+<span class="hidden md:inline font-legal-code text-legal-code text-on-surface-variant">Statutory Protocol: BCO 1962 §25A &amp; PSD Reg. 2023</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold uppercase">Encrypted SBP Tunnel</span>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md px-space-xs py-0.5 rounded" type="button">
+<span class="material-symbols-outlined text-sm">print</span>
+<span class="hidden sm:inline">Certified Docket</span>
+</button>
+</div>
+</div>
+<!-- Main Dual-Column Workbench -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start h-[calc(100vh-14.5rem)] min-h-[640px]">
+<!-- Left Sidebar (Width: ~320px equivalent across 12 cols, lg:col-span-3 or 4) -->
+<aside class="hidden lg:flex flex-col lg:col-span-3 xl:col-span-3 h-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Sidebar Header / + New Dispute Inquiry Button -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm">
+<button class="w-full py-space-sm px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-sm transition-all duration-150" id="btn-new-chat" type="button">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>New Formal Inquiry</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 px-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Regulatory Log</span>
+<span class="font-legal-code text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-on-surface font-medium">5 Dockets</span>
+</div>
+</div>
+<!-- Sidebar Navigation Streams -->
+<div class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-space-md">
+<!-- Category: Active Grievances -->
+<div>
+<div class="px-space-xs pb-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Active Grievance Trackers</div>
+<div class="space-y-1">
+<!-- Session 1: Active with state highlights -->
+<div class="group relative flex items-center justify-between p-space-sm rounded-lg bg-secondary-container/60 text-on-secondary-container transition-colors cursor-pointer">
+<div class="flex items-start gap-space-xs min-w-0 pr-2">
+<span class="material-symbols-outlined text-base mt-0.5 text-primary flex-shrink-0" style="font-variation-settings: 'FILL' 1;">shield</span>
+<div class="min-w-0">
+<p class="font-headline-sm text-body-sm font-semibold truncate text-primary">Unauthorized ATM withdrawal claim (HBL)</p>
+<span class="font-legal-code text-label-sm text-on-surface-variant block truncate">D-88412 · 48h Escalation Window</span>
+</div>
+</div>
+<!-- Action triggers on hover -->
+<div class="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity flex-shrink-0 bg-surface-container-lowest/80 rounded px-1">
+<button class="p-1 hover:text-primary transition-colors" title="Rename inquiry">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+<button class="p-1 hover:text-error transition-colors" title="Archive record">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+</div>
+<!-- Session 2 -->
+<div class="group relative flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface">
+<div class="flex items-start gap-space-xs min-w-0 pr-2">
+<span class="material-symbols-outlined text-base mt-0.5 text-outline flex-shrink-0">gavel</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm font-medium truncate text-on-surface">Credit Card hidden annual fee complaint</p>
+<span class="font-legal-code text-label-sm text-outline-variant block truncate">SOC Clause 14 · Bank Alfalah</span>
+</div>
+</div>
+<div class="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity flex-shrink-0 bg-surface-container-lowest/80 rounded px-1">
+<button class="p-1 hover:text-primary transition-colors" title="Rename inquiry"><span class="material-symbols-outlined text-sm">edit</span></button>
+<button class="p-1 hover:text-error transition-colors" title="Archive record"><span class="material-symbols-outlined text-sm">delete</span></button>
+</div>
+</div>
+<!-- Session 3 -->
+<div class="group relative flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface">
+<div class="flex items-start gap-space-xs min-w-0 pr-2">
+<span class="material-symbols-outlined text-base mt-0.5 text-outline flex-shrink-0">account_balance</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm font-medium truncate text-on-surface">Meezan Bank Roshan Digital Account delay</p>
+<span class="font-legal-code text-label-sm text-outline-variant block truncate">FX Remittance · Pending SBP NIFT</span>
+</div>
+</div>
+<div class="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity flex-shrink-0 bg-surface-container-lowest/80 rounded px-1">
+<button class="p-1 hover:text-primary transition-colors" title="Rename inquiry"><span class="material-symbols-outlined text-sm">edit</span></button>
+<button class="p-1 hover:text-error transition-colors" title="Archive record"><span class="material-symbols-outlined text-sm">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Regulatory Inquiries -->
+<div>
+<div class="px-space-xs pb-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Statutory Reference Inquiries</div>
+<div class="space-y-1">
+<!-- Session 4 -->
+<div class="group relative flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface">
+<div class="flex items-start gap-space-xs min-w-0 pr-2">
+<span class="material-symbols-outlined text-base mt-0.5 text-outline flex-shrink-0">description</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm font-medium truncate text-on-surface">Schedule of Charges clarification 2024</p>
+<span class="font-legal-code text-label-sm text-outline-variant block truncate">BPRD Circular 02 · General</span>
+</div>
+</div>
+<div class="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity flex-shrink-0 bg-surface-container-lowest/80 rounded px-1">
+<button class="p-1 hover:text-primary transition-colors" title="Rename inquiry"><span class="material-symbols-outlined text-sm">edit</span></button>
+<button class="p-1 hover:text-error transition-colors" title="Archive record"><span class="material-symbols-outlined text-sm">delete</span></button>
+</div>
+</div>
+<!-- Session 5 -->
+<div class="group relative flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface">
+<div class="flex items-start gap-space-xs min-w-0 pr-2">
+<span class="material-symbols-outlined text-base mt-0.5 text-outline flex-shrink-0">sync_alt</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm font-medium truncate text-on-surface">IBFT failed transaction refund window</p>
+<span class="font-legal-code text-label-sm text-outline-variant block truncate">Raast Interbank Rules · T+1 Settlement</span>
+</div>
+</div>
+<div class="opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity flex-shrink-0 bg-surface-container-lowest/80 rounded px-1">
+<button class="p-1 hover:text-primary transition-colors" title="Rename inquiry"><span class="material-symbols-outlined text-sm">edit</span></button>
+<button class="p-1 hover:text-error transition-colors" title="Archive record"><span class="material-symbols-outlined text-sm">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Institutional Footer -->
+<div class="p-space-sm bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-legal-code text-label-sm text-on-surface-variant">
+<span class="font-semibold text-primary">BC&amp;CPD v4.2</span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Synchronized
+            </span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+<a class="hover:text-primary transition-colors underline" href="#">BCO 1962 Codex</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors underline" href="#">Ombudsman Portal</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors underline" href="#">Audit Logs</a>
+</div>
+</div>
+</aside>
+<!-- Main Chat Thread & Work Area (9 cols) -->
+<section class="col-span-1 lg:col-span-9 xl:col-span-9 h-full flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden relative">
+<!-- Chat Area Top Sub-Header -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Case Dossier: ATM Unauthorized Debit Grievance</span>
+<span class="font-legal-code text-label-sm text-on-surface-variant">Formal Jurisdiction: Consumer Protection Department, State Bank of Pakistan</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-legal-code text-label-sm px-space-sm py-1 bg-surface-container rounded text-on-surface font-semibold">HBL · Branch #0192</span>
+<span class="font-legal-code text-label-sm px-space-sm py-1 bg-error-container text-on-error-container font-semibold rounded">Dispute: PKR 18,500</span>
+</div>
+</div>
+<!-- Scrollable Message Stream -->
+<div class="flex-1 overflow-y-auto p-space-md lg:p-space-lg space-y-space-lg" id="message-container">
+<!-- System Initial Stamp -->
+<div class="flex items-center justify-center">
+<span class="font-legal-code text-label-sm text-on-surface-variant bg-surface-container px-space-md py-1 rounded-full uppercase tracking-wider">
+              Statutory Intake Logged: Today 10:42 AM PKT · SBP Session #88412
+            </span>
+</div>
+<!-- User Message Bubble (Right-aligned) -->
+<div class="flex justify-end gap-space-sm pl-8">
+<div class="flex flex-col items-end max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Tariq Mahmood (Complainant)</span>
+<span class="font-legal-code text-label-sm text-outline">10:43 AM</span>
+</div>
+<div class="bg-primary text-on-primary p-space-md rounded-2xl rounded-tr-xs shadow-sm font-body-md text-body-md leading-relaxed">
+                My commercial bank deducted Rs. 18,500 without generating an SMS OTP or alert on Oct 14th. The branch manager refused to register my formal complaint. What are my statutory rights?
+              </div>
+<span class="font-legal-code text-label-sm text-outline-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">done_all</span> Delivered to SBP Gateway
+              </span>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md font-bold flex-shrink-0 mt-1 shadow-sm">
+              TM
+            </div>
+</div>
+<!-- Assistant Message Bubble (Left-aligned) -->
+<div class="flex items-start gap-space-sm pr-4 max-w-3xl">
+<!-- SBP Emblem Logo -->
+<div class="w-10 h-10 rounded-full bg-surface-container-low p-1 flex-shrink-0 shadow-sm flex items-center justify-center overflow-hidden">
+<img alt="SBP Consumer Protection Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q"/>
+</div>
+<div class="flex flex-col items-start w-full">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">State Bank Consumer Protection Assistant</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold uppercase">Official Regulatory AI</span>
+<span class="font-legal-code text-label-sm text-outline">10:44 AM</span>
+</div>
+<!-- Main Card Content -->
+<div class="w-full bg-surface-container-low text-on-surface p-space-lg rounded-2xl rounded-tl-xs shadow-sm space-y-space-md">
+<!-- Mandatory Immediate Redressal Clause -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm mb-1">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>1. Immediate Complaint Tracking Obligation</span>
+</div>
+
+</div>
+<!-- 2FA & Burden of Proof Clause -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm mb-1">
+<span class="material-symbols-outlined text-base">balance</span>
+<span>2. Reversal of Burden of Proof (Unnotified Transaction)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                    Furthermore, under <strong class="font-semibold text-primary">Banking Companies Ordinance (1962) &amp; Payment Systems Regulations</strong>, transactions initiated without two-factor authentication (2FA) or concurrent telecom dispatch place the strict burden of proof on the acquiring bank, not the account holder.
+                  </p>
+</div>
+<!-- Next Steps / Consultation Prompt -->
+<p class="font-body-md text-body-md text-on-surface-variant font-medium pt-1">
+                  Would you like to initiate a formal statutory escalation, download the standardized dispute form, or review the bank's maximum allowable resolution timeline?
+                </p>
+<!-- Interactive Suggested Action Chips -->
+<div class="pt-space-xs flex flex-wrap gap-space-sm">
+<button class="px-space-md py-space-sm bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-full shadow-sm flex items-center gap-space-xs transition-all duration-150 transform active:scale-95" onclick="handleChipAction('mohtasib')" type="button">
+<span>⚖️</span>
+<span>Escalate to Banking Mohtasib (Ombudsman)</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-full shadow-sm flex items-center gap-space-xs transition-all duration-150 transform active:scale-95" onclick="handleChipAction('form-cp1')" type="button">
+<span>📄</span>
+<span>Generate Pre-filled SBP Form CP-1</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-full shadow-sm flex items-center gap-space-xs transition-all duration-150 transform active:scale-95" onclick="handleChipAction('timeline')" type="button">
+<span>⏱️</span>
+<span>View 15-Day Resolution Timeline</span>
+</button>
+</div>
+<!-- Inline Micro Evidence Visualizer: Resolution Clock -->
+<div class="hidden mt-space-md p-space-md bg-surface-container rounded-lg transition-all duration-200" id="timeline-drawer">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-secondary">Statutory Resolution Clock (BCO Mandate)</span>
+<span class="font-legal-code text-label-sm text-primary font-semibold">T+15 Days Max</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full w-2/15"></div>
+<div class="bg-secondary h-full w-4/15"></div>
+<div class="bg-outline-variant h-full w-9/15"></div>
+</div>
+<div class="grid grid-cols-3 text-center mt-2 font-legal-code text-label-sm text-on-surface-variant">
+<div>Day 1–2: Intake &amp; Tracking ID</div>
+<div>Day 3–7: Switch Reversal Check</div>
+<div>Day 8–15: Final Credit / Ombudsman</div>
+</div>
+</div>
+</div>
+<!-- Regulatory Verification Footnote -->
+<div class="flex items-center gap-space-sm mt-space-xs text-outline font-label-sm text-label-sm pl-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">verified_user</span>
+                  Verified against SBP BC&amp;CPD Regulations database
+                </span>
+<span>•</span>
+<button class="hover:text-primary transition-colors underline" type="button">Copy Citation</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Regulatory Prompt & Input Zone -->
+<div class="p-space-md lg:p-space-lg bg-surface-container-lowest/95 backdrop-blur">
+<form class="relative w-full max-w-4xl mx-auto flex flex-col gap-space-xs" id="chat-input-form" onsubmit="handleSend(event)">
+<!-- Floating Textarea Bar Container -->
+<div class="w-full rounded-2xl bg-surface-container-low focus-within:bg-surface-container-lowest shadow-md p-space-sm flex flex-col transition-all duration-200">
+<!-- Input field -->
+<textarea class="w-full px-space-sm py-space-xs bg-transparent border-none text-on-surface placeholder:text-outline focus:outline-none resize-none font-body-md text-body-md" id="prompt-textarea" onkeydown="handleKeydown(event)" placeholder="Inquire about consumer rights, file banking complaints, or cite SBP regulations..." rows="2"></textarea>
+<!-- Controls Toolbar inside prompt container -->
+<div class="flex items-center justify-between pt-space-xs px-space-xs">
+<!-- Left tools: Upload evidence & audio input -->
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center gap-1 text-label-md font-label-md transition-colors" onclick="document.getElementById('file-upload').click()" title="Upload Bank Statement or Transaction Slip (PDF/JPG)" type="button">
+<span class="material-symbols-outlined text-lg">attach_file</span>
+<span class="hidden sm:inline">Attach Proof</span>
+</button>
+<input accept=".pdf,.png,.jpg,.jpeg" class="hidden" id="file-upload" type="file"/>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" title="Dictate in Urdu or English" type="button">
+<span class="material-symbols-outlined text-lg">mic</span>
+</button>
+<div class="hidden items-center gap-1 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-label-sm font-legal-code" id="attachment-badge">
+<span class="material-symbols-outlined text-xs">description</span>
+<span class="truncate max-w-[120px]" id="file-name">statement.pdf</span>
+<button class="hover:text-error ml-1" onclick="clearAttachment()" type="button">✕</button>
+</div>
+</div>
+<!-- Right tool: Deep navy circular Send button -->
+<div class="flex items-center gap-space-sm">
+<span class="hidden md:inline font-legal-code text-label-sm text-outline">Press Enter ↵</span>
+<button aria-label="Send query" class="w-10 h-10 rounded-full bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shadow-md transition-transform duration-150 transform hover:scale-105 active:scale-95" id="btn-send" type="submit">
+<span class="material-symbols-outlined text-xl">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mandatory Institutional Disclaimer -->
+<div class="flex items-center justify-center gap-1.5 px-space-sm text-center">
+<span class="material-symbols-outlined text-xs text-outline">security</span>
+<p class="font-legal-code text-label-sm text-outline">
+                SBP Consumer Protection Assistant utilizes official State Bank circulars. Responses are auditable records under BCO 1962.
+              </p>
+</div>
+</form>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Handle suggestion pill chip interactions
+  function handleChipAction(actionType) {
+    const thread = document.getElementById('message-container');
+    const timelineDrawer = document.getElementById('timeline-drawer');
+    
+    if (actionType === 'timeline') {
+      if (timelineDrawer) {
+        timelineDrawer.classList.toggle('hidden');
+      }
+      return;
+    }
+
+    let textPrompt = '';
+    if (actionType === 'mohtasib') {
+      textPrompt = 'Please draft a formal escalation petition to the Banking Mohtasib Pakistan under BCO Section 82D for unauthorized debit of Rs. 18,500.';
+    } else if (actionType === 'form-cp1') {
+      textPrompt = 'Generate the pre-filled Consumer Grievance Form CP-1 with HBL as respondent bank.';
+    }
+
+    if (textPrompt) {
+      appendUserMessage(textPrompt);
+      setTimeout(() => {
+        appendAssistantDraftResponse(actionType);
+      }, 700);
+    }
+  }
+
+  function handleKeydown(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSend(e);
+    }
+  }
+
+  function handleSend(e) {
+    e.preventDefault();
+    const textarea = document.getElementById('prompt-textarea');
+    const text = textarea.value.trim();
+    if (!text) return;
+
+    appendUserMessage(text);
+    textarea.value = '';
+
+    setTimeout(() => {
+      appendGenericAssistantResponse();
+    }, 800);
+  }
+
+  function appendUserMessage(text) {
+    const thread = document.getElementById('message-container');
+    const userDiv = document.createElement('div');
+    userDiv.className = 'flex justify-end gap-space-sm pl-8';
+    userDiv.innerHTML = `
+      <div class="flex flex-col items-end max-w-2xl">
+        <div class="flex items-center gap-space-xs mb-1">
+          <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Tariq Mahmood</span>
+          <span class="font-legal-code text-label-sm text-outline">Just now</span>
+        </div>
+        <div class="bg-primary text-on-primary p-space-md rounded-2xl rounded-tr-xs shadow-sm font-body-md text-body-md leading-relaxed">
+          ${escapeHtml(text)}
+        </div>
+        <span class="font-legal-code text-label-sm text-outline-variant mt-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-xs">done</span> Transmitted to SBP
+        </span>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md font-bold flex-shrink-0 mt-1 shadow-sm">
+        TM
+      </div>
+    `;
+    thread.appendChild(userDiv);
+    thread.scrollTop = thread.scrollHeight;
+  }
+
+  function appendAssistantDraftResponse(actionType) {
+    const thread = document.getElementById('message-container');
+    const respDiv = document.createElement('div');
+    respDiv.className = 'flex items-start gap-space-sm pr-4 max-w-3xl';
+    
+    let content = '';
+    if (actionType === 'mohtasib') {
+      content = `
+        <p class="font-body-md text-body-md text-on-surface mb-2">
+          <strong>Official SBP Redressal Escalation Generated:</strong> Your petition is formatted according to Banking Mohtasib (Ombudsman) Regulations 2005.
+        </p>
+        <div class="bg-surface-container p-space-md rounded-lg font-legal-code text-body-sm text-on-surface space-y-1">
+          <div>RE: Formal Complaint against Habib Bank Limited (HBL)</div>
+          <div>Jurisdiction: SBP BCO 1962 §82D · Unauthorized ATM Dispensation</div>
+          <div>Claim Amount: PKR 18,500.00 · Zero-Notification Dispute</div>
+        </div>
+        <div class="mt-3 flex gap-2">
+          <button class="px-space-md py-space-xs bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">download</span> Download Certified Form
+          </button>
+        </div>
+      `;
+    } else {
+      content = `
+        <p class="font-body-md text-body-md text-on-surface mb-2">
+          <strong>Form CP-1 Ready:</strong> The standard Consumer Protection intake docket has been populated with case reference <span class="font-legal-code font-semibold">SBP-CPD-2024-88412</span>.
+        </p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          This document can be served directly to the bank's Principal Disputed Officer or submitted via our e-portal.
+        </p>
+      `;
+    }
+
+    respDiv.innerHTML = `
+      <div class="w-10 h-10 rounded-full bg-surface-container-low p-1 flex-shrink-0 shadow-sm flex items-center justify-center overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q" alt="SBP Consumer Protection Logo" class="w-full h-full object-contain">
+      </div>
+      <div class="flex flex-col items-start w-full">
+        <div class="flex items-center gap-space-xs mb-1">
+          <span class="font-headline-sm text-headline-sm text-primary font-bold">State Bank Consumer Protection Assistant</span>
+          <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold uppercase">Statutory Draft</span>
+        </div>
+        <div class="w-full bg-surface-container-low text-on-surface p-space-lg rounded-2xl rounded-tl-xs shadow-sm space-y-2">
+          ${content}
+        </div>
+      </div>
+    `;
+    thread.appendChild(respDiv);
+    thread.scrollTop = thread.scrollHeight;
+  }
+
+  function appendGenericAssistantResponse() {
+    const thread = document.getElementById('message-container');
+    const respDiv = document.createElement('div');
+    respDiv.className = 'flex items-start gap-space-sm pr-4 max-w-3xl';
+    respDiv.innerHTML = `
+      <div class="w-10 h-10 rounded-full bg-surface-container-low p-1 flex-shrink-0 shadow-sm flex items-center justify-center overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q" alt="SBP Consumer Protection Logo" class="w-full h-full object-contain">
+      </div>
+      <div class="flex flex-col items-start w-full">
+        <div class="flex items-center gap-space-xs mb-1">
+          <span class="font-headline-sm text-headline-sm text-primary font-bold">State Bank Consumer Protection Assistant</span>
+          <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold uppercase">Statutory Ruling</span>
+        </div>
+        <div class="w-full bg-surface-container-low text-on-surface p-space-lg rounded-2xl rounded-tl-xs shadow-sm space-y-space-sm">
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Your query has been logged against the active case file. Per SBP Guidelines on Grievance Redressal, commercial banks are instructed to acknowledge receipt within 2 working days. We have noted this operational violation in the supervisory ledger.
+          </p>
+        </div>
+      </div>
+    `;
+    thread.appendChild(respDiv);
+    thread.scrollTop = thread.scrollHeight;
+  }
+
+  // File upload simulation
+  const fileInput = document.getElementById('file-upload');
+  if (fileInput) {
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) {
+        const badge = document.getElementById('attachment-badge');
+        const fileNameSpan = document.getElementById('file-name');
+        fileNameSpan.textContent = e.target.files[0].name;
+        badge.classList.remove('hidden');
+        badge.classList.add('flex');
+      }
+    });
+  }
+
+  function clearAttachment() {
+    const badge = document.getElementById('attachment-badge');
+    const fileInput = document.getElementById('file-upload');
+    badge.classList.add('hidden');
+    badge.classList.remove('flex');
+    fileInput.value = '';
+  }
+
+  function escapeHtml(string) {
+    const pre = document.createElement('pre');
+    const text = document.createTextNode(string);
+    pre.appendChild(text);
+    return pre.innerHTML;
+  }
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col gap-space-xs text-center md:text-left"><span class="font-legal-code text-legal-code text-on-surface-variant">State Bank of Pakistan Consumer Protection Department · Circular No. CPD/2024-09 · Inquiries: cpd.helpdesk@sbp.org.pk</span><span class="font-body-sm text-body-sm text-outline">Statutory Regulatory Gateway operating under the Banking Companies Ordinance (1962). All AI syntheses are auditable records.</span></div><div class="flex items-center gap-space-md text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Apex Financial Regulator</span></div></div></footer></body></html>

@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ── Expose CSS custom properties as Tailwind utilities ── */
+@theme {
+  /* Colors — mapped to CSS variables from theme.css */
+  --color-primary:                    var(--color-primary);
+  --color-on-primary:                 var(--color-on-primary);
+  --color-primary-container:          var(--color-primary-container);
+  --color-secondary:                  var(--color-secondary);
+  --color-gold:                       var(--color-gold);
+  --color-emerald:                    var(--color-emerald);
+  --color-error:                      var(--color-error);
+
+  --color-background:                 var(--color-background);
+  --color-surface:                    var(--color-surface);
+  --color-surface-container-lowest:   var(--color-surface-container-lowest);
+  --color-surface-container-low:      var(--color-surface-container-low);
+  --color-surface-container:          var(--color-surface-container);
+  --color-surface-container-high:     var(--color-surface-container-high);
+  --color-surface-container-highest:  var(--color-surface-container-highest);
+  --color-surface-dim:                var(--color-surface-dim);
+  --color-inverse-surface:            var(--color-inverse-surface);
+
+  --color-on-surface:                 var(--color-on-surface);
+  --color-on-surface-variant:         var(--color-on-surface-variant);
+  --color-on-background:              var(--color-on-background);
+  --color-outline:                    var(--color-outline);
+  --color-outline-variant:            var(--color-outline-variant);
+
+  /* Semantic text roles */
+  --color-text-primary:               var(--color-text-primary);
+  --color-text-secondary:             var(--color-text-secondary);
+  --color-text-muted:                 var(--color-text-muted);
+  --color-text-brand:                 var(--color-text-brand);
+  --color-text-brand-accent:          var(--color-text-brand-accent);
+  --color-text-on-dark:               var(--color-text-on-dark);
+  --color-text-gold:                  var(--color-text-gold);
+
+  /* Containers */
+  --color-secondary-container:        var(--color-secondary-container);
+  --color-on-secondary-container:     var(--color-on-secondary-container);
+  --color-error-container:            var(--color-error-container);
+  --color-on-error-container:         var(--color-on-error-container);
+
+  /* Containers (Standard widths) */
+  --container-xs:    20rem;
+  --container-sm:    24rem;
+  --container-md:    28rem;
+  --container-lg:    32rem;
+  --container-xl:    36rem;
+
+  /* Border Radius */
+  --radius-sm:   var(--radius-sm);
+  --radius:      var(--radius);
+  --radius-md:   var(--radius-md);
+  --radius-lg:   var(--radius-lg);
+  --radius-xl:   var(--radius-xl);
+  --radius-full: var(--radius-full);
+
+  /* Box Shadows */
+  --shadow-1:     var(--shadow-1);
+  --shadow-2:     var(--shadow-2);
+  --shadow-3:     var(--shadow-3);
+  --shadow-inner: var(--shadow-inner);
+
+  /* Fonts */
+  --font-primary: var(--font-primary);
+  --font-mono:    var(--font-mono);
+
+  /* Transitions */
+  --transition-fast: var(--transition-fast);
+}
+
+/* ── Base styles ── */
+html {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Typography utility classes (from DESIGN.md §3.2) ── */
+.text-display-lg    { font-size: 40px; font-weight: 600; line-height: 48px; letter-spacing: -0.02em; }
+.text-headline-xl   { font-size: 28px; font-weight: 600; line-height: 36px; letter-spacing: -0.015em; }
+.text-headline-lg   { font-size: 20px; font-weight: 600; line-height: 28px; letter-spacing: -0.01em; }
+.text-headline-sm   { font-size: 16px; font-weight: 600; line-height: 24px; letter-spacing: -0.005em; }
+.text-body-lg       { font-size: 16px; font-weight: 400; line-height: 26px; letter-spacing: 0em; }
+.text-body-md       { font-size: 14px; font-weight: 400; line-height: 22px; letter-spacing: 0em; }
+.text-body-sm       { font-size: 13px; font-weight: 400; line-height: 18px; letter-spacing: 0.005em; }
+.text-label-md      { font-size: 12px; font-weight: 600; line-height: 16px; letter-spacing: 0.04em; text-transform: uppercase; }
+.text-label-sm      { font-size: 11px; font-weight: 500; line-height: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+.text-legal-code    { font-family: var(--font-mono); font-size: 12px; font-weight: 500; line-height: 18px; letter-spacing: 0em; font-variant-numeric: tabular-nums; }
+
+/* ── Semantic text utility classes ── */
+.text-brand         { color: var(--color-text-brand); }
+.text-brand-accent  { color: var(--color-text-brand-accent); }
+.text-muted         { color: var(--color-text-muted); }
+.text-on-dark       { color: var(--color-text-on-dark); }

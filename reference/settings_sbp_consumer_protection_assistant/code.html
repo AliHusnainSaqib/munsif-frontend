@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f7f9fb", "on-tertiary-fixed": "#281800", "surface-tint": "#4c5f82", "on-surface": "#191c1e", "on-primary-container": "#798cb1", "on-primary-fixed-variant": "#344769", "surface-variant": "#e0e3e5", "tertiary-fixed-dim": "#e0c298", "outline-variant": "#c5c6cf", "primary-container": "#0f2444", "inverse-primary": "#b4c7ef", "surface-container-highest": "#e0e3e5", "surface-dim": "#d8dadc", "inverse-on-surface": "#eff1f3", "on-tertiary-container": "#a28761", "secondary-fixed-dim": "#b9c7df", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "tertiary-fixed": "#fedeb2", "secondary-fixed": "#d5e3fc", "error-container": "#ffdad6", "surface": "#f7f9fb", "on-primary-fixed": "#041b3b", "primary-fixed": "#d7e3ff", "background": "#f7f9fb", "on-error": "#ffffff", "tertiary": "#180d00", "surface-container": "#eceef0", "surface-container-lowest": "#ffffff", "inverse-surface": "#2d3133", "on-primary": "#ffffff", "outline": "#75777f", "on-error-container": "#93000a", "secondary": "#515f74", "primary": "#000e27", "surface-container-low": "#f2f4f6", "surface-container-high": "#e6e8ea", "on-secondary-fixed": "#0d1c2e", "on-tertiary": "#ffffff", "tertiary-container": "#322105", "on-secondary": "#ffffff", "on-surface-variant": "#44474e", "on-background": "#191c1e", "on-tertiary-fixed-variant": "#584323", "error": "#ba1a1a", "primary-fixed-dim": "#b4c7ef", "secondary-container": "#d5e3fc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "margin-sm": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-sm": "1rem" }, "fontFamily": { "headline-xl": [ "Inter" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Inter" ], "display-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "label-md": [ "Inter" ], "display-lg": [ "Inter" ], "legal-code": [ "JetBrains Mono" ], "headline-sm": [ "Inter" ] }, "fontSize": { "headline-xl": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" } ], "headline-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-xl-mobile": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "display-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "legal-code": [ "12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="SBP Consumer Protection Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKv9jIi4ZgOlnvjpOkZjYCF-Bf7kaVLb9rdSAt6m8IZcDmDV67CLfDPjBu_x8xKn1yG74M3aEhzDs8_hpKrKhy49sgVO5cL55-v-rnhLER4A9JmXmjjx2vN4yqjaMYQ8FUIvZdypuJ2GCc1P0odhO2N2a9wWstVloSifOnm8mL7dXLYM8h80H7FVyykU9mTPsuL007nfnMuTI9Pjw5y85qE2lBXIrdYZChOJ2zi_IVP1EsuiBYxzk95Q"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">State Bank of Pakistan</span><span class="font-label-sm text-label-sm uppercase tracking-wider px-space-xs py-0.5 bg-secondary-container text-on-secondary-container rounded font-semibold">Regulated Banking AI</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Consumer Protection Assistant</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container rounded-lg" data-active-classes="bg-primary text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="assistant-chat" href="#">Assistant Chat</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="dispute-tracking" href="#">Dispute Tracking</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary text-on-primary font-semibold rounded-lg shadow-sm" data-path="settings" href="#">Settings</a><a class="px-space-md py-space-sm font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors rounded-lg" data-path="admin-portal" href="#">Admin Portal</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle color mode" class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="material-symbols-outlined text-lg block dark:hidden">dark_mode</span><span class="material-symbols-outlined text-lg hidden dark:block">light_mode</span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrSZ-nOeiPSY96ip7ljiJT74oF19sLLc3gBPlj2Ng_rzZDXIDSXCJiD2Z5Cpx8KrwRtVszdelNSXlHeYKUURhSZniCSsM48SnL_IB2G-0n3Z5KB605gnEJ_HFigC8mMidI6OHdU7D5YWzLKL0DUa-Tpcqh-djfLt1UDv4JQSsMLxY_6-lhpR_n0kSuauALsfDWAUY5W7_DkqIFX1S7uEHmpVz7IG9wR1g92TK46BQl5UiE1AxJwehAQ"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Tariq M.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Regulatory Affairs</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Sovereign Breadcrumb & Statutory Authority Indicator -->
+<div class="w-full bg-surface-container-low px-margin py-space-sm shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="text-secondary">Banking Portal</span>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="text-secondary">Statutory Access Identity</span>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Settings &amp; Security Policy</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container font-legal-code text-legal-code text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          AUTH-CLEARANCE: BCO-LEVEL-4
+        </span>
+<span class="text-outline-variant">|</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">SBP-PRIS-PORTAL v4.2.1</span>
+</div>
+</div>
+</div>
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+<!-- Top Editorial Heading Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm tracking-widest uppercase font-semibold">Central Bank Credential</span>
+<span class="font-legal-code text-legal-code text-secondary">NODE://KHI-HQ-SEC-09</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Portal Settings &amp; Security Preferences</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Manage regulatory authentication profiles, statutory multi-factor verifications, cryptographic keys, and sovereign consumer portal accessibility configurations.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">history</span>
+<span>Security Audit Trail</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Sign Digital Certificate</span>
+</button>
+</div>
+</div>
+<!-- Tabbed Navigation Bar -->
+<div class="w-full bg-surface-container rounded-xl p-1.5 mb-space-xl shadow-sm flex flex-wrap gap-1">
+<button class="tab-trigger flex-1 min-w-[160px] py-space-sm px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" id="tab-btn-profile" onclick="switchTab('profile')" type="button">
+<span class="material-symbols-outlined text-lg">badge</span>
+<span>Profile &amp; Mandate</span>
+</button>
+<button class="tab-trigger flex-1 min-w-[160px] py-space-sm px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" id="tab-btn-security" onclick="switchTab('security')" type="button">
+<span class="material-symbols-outlined text-lg">shield_lock</span>
+<span>Security &amp; 2FA</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<button class="tab-trigger flex-1 min-w-[160px] py-space-sm px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" id="tab-btn-appearance" onclick="switchTab('appearance')" type="button">
+<span class="material-symbols-outlined text-lg">contrast</span>
+<span>Appearance &amp; Display</span>
+</button>
+<button class="tab-trigger flex-1 min-w-[160px] py-space-sm px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" id="tab-btn-notifications" onclick="switchTab('notifications')" type="button">
+<span class="material-symbols-outlined text-lg">notifications_active</span>
+<span>Regulatory Dispatches</span>
+</button>
+</div>
+<!-- MAIN CONTENT CONTAINERS -->
+<!-- 1. PROFILE SECTION -->
+<section class="tab-content flex flex-col gap-space-lg" id="section-profile">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Identity Card (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center">
+<div class="relative group mb-space-md">
+<div class="w-32 h-32 rounded-xl overflow-hidden shadow-md bg-surface-container-high">
+<img alt="Dr. Tariq Mahmood - Official Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrSZ-nOeiPSY96ip7ljiJT74oF19sLLc3gBPlj2Ng_rzZDXIDSXCJiD2Z5Cpx8KrwRtVszdelNSXlHeYKUURhSZniCSsM48SnL_IB2G-0n3Z5KB605gnEJ_HFigC8mMidI6OHdU7D5YWzLKL0DUa-Tpcqh-djfLt1UDv4JQSsMLxY_6-lhpR_n0kSuauALsfDWAUY5W7_DkqIFX1S7uEHmpVz7IG9wR1g92TK46BQl5UiE1AxJwehAQ"/>
+</div>
+<span class="absolute -bottom-2 -right-2 bg-primary text-on-primary rounded-full p-1.5 shadow-md flex items-center justify-center" title="Verified SBP Officer">
+<span class="material-symbols-outlined text-sm font-bold">verified</span>
+</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Dr. Tariq Mahmood</h2>
+<p class="font-label-md text-label-md text-secondary font-medium mt-0.5">Senior Compliance Officer</p>
+<span class="mt-2 font-legal-code text-legal-code bg-surface-container px-3 py-1 rounded-full text-on-surface-variant">
+            CNIC: 42101-7890123-1
+          </span>
+<div class="w-full bg-surface-container-low rounded-lg p-space-md mt-space-lg text-left flex flex-col gap-2 text-on-surface-variant">
+<div class="flex items-center justify-between text-xs font-medium">
+<span class="text-secondary">Statutory Division</span>
+<span class="font-semibold text-primary">CPD (Consumer Protection)</span>
+</div>
+<div class="flex items-center justify-between text-xs font-medium">
+<span class="text-secondary">Official ID</span>
+<span class="font-legal-code text-on-surface">SBP-OFF-08819</span>
+</div>
+<div class="flex items-center justify-between text-xs font-medium">
+<span class="text-secondary">Jurisdiction</span>
+<span class="font-semibold text-primary">Karachi Central Secretariat</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full mt-space-lg">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">photo_camera</span>
+              Change Photo
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-error font-label-md text-label-md transition-colors" title="Remove Profile Photo" type="button">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+<!-- Right Profile Information Details (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-lg">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Civil Identity &amp; Delegation</h3>
+
+</div>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Full Display Name</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-lg pointer-events-none">person</span>
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest pl-10 pr-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" type="text" value="Dr. Tariq Mahmood"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Official Designation &amp; Title</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-lg pointer-events-none">workspace_premium</span>
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest pl-10 pr-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" type="text" value="Senior Compliance Officer"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Verified CNIC Number</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-lg pointer-events-none">fingerprint</span>
+<input class="w-full bg-surface-container pl-10 pr-3 py-2.5 rounded-lg text-on-surface-variant font-legal-code text-legal-code cursor-not-allowed" readonly="" type="text" value="42101-7890123-1"/>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Locked under Central Bank Statutory Identity Framework.</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Statutory Email Channel</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-lg pointer-events-none">mail</span>
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest pl-10 pr-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" type="email" value="tariq.mahmood@sbp.org.pk"/>
+</div>
+</div>
+</div>
+<!-- Language and Dialect Preference Section -->
+<div class="mt-space-lg pt-space-md">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Regulatory Language Interface</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Sets default language parsing for Banking Companies Ordinance syntheses and official Ombudsman decrees.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<label class="relative flex flex-col p-space-md bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all group">
+<input checked="" class="peer sr-only" name="lang_select" type="radio" value="en"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-bold text-primary">English</span>
+<span class="w-4 h-4 rounded-full bg-surface-container peer-checked:bg-primary flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-primary peer-checked:bg-on-primary"></span>
+</span>
+</div>
+<span class="font-legal-code text-legal-code text-secondary mb-1">Official Regulatory</span>
+<span class="text-xs text-on-surface-variant">Statutory standard for circulars and notifications</span>
+</label>
+<label class="relative flex flex-col p-space-md bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all group">
+<input class="peer sr-only" name="lang_select" type="radio" value="ur"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-bold text-primary font-serif">اردو (Urdu)</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center"></span>
+</div>
+<span class="font-legal-code text-legal-code text-secondary mb-1">قومی زبان</span>
+<span class="text-xs text-on-surface-variant">مکمل ریگولیٹری ترجمہ اور کسٹمر سپورٹ</span>
+</label>
+<label class="relative flex flex-col p-space-md bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all group">
+<input class="peer sr-only" name="lang_select" type="radio" value="sd"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-bold text-primary font-serif">سنڌي (Sindhi)</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center"></span>
+</div>
+<span class="font-legal-code text-legal-code text-secondary mb-1">صوبائي ٻولي</span>
+<span class="text-xs text-on-surface-variant">صارفين جي شڪايتن جي سرڪاري ورڪ فلو</span>
+</label>
+<label class="relative flex flex-col p-space-md bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-all group">
+<input class="peer sr-only" name="lang_select" type="radio" value="ps"/>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md font-bold text-primary font-serif">پښتو (Pashto)</span>
+<span class="w-4 h-4 rounded-full bg-surface-variant flex items-center justify-center"></span>
+</div>
+<span class="font-legal-code text-legal-code text-secondary mb-1">سيمه ايزه ژبه</span>
+<span class="text-xs text-on-surface-variant">د قانوني او مالي شخړو رسمي ملاتړ</span>
+</label>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end gap-space-sm pt-space-md">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" type="button">
+                Cancel
+              </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+                Save Profile Changes
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SECURITY & 2FA SECTION -->
+<section class="tab-content flex flex-col gap-space-lg" id="section-security">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Password Change Card (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">lock</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Cryptographic Credentials</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enforce FIPS-140-3 Central Bank entropy rules.</p>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Current Password</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest px-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" type="password" value="••••••••••••••••"/>
+<button class="absolute right-3 text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">New Password</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest px-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" placeholder="At least 14 alphanumeric chars + symbols" type="password"/>
+<button class="absolute right-3 text-secondary hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-lg">visibility_off</span>
+</button>
+</div>
+<!-- Strength Meter -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-secondary-container h-full w-3/4"></div>
+</div>
+<div class="flex justify-between text-xs text-on-surface-variant">
+<span>Complexity: <strong class="text-primary font-semibold">High Defense</strong></span>
+<span>SBP ISO-27001 Compliant</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Confirm New Password</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest px-3 py-2.5 rounded-lg text-on-surface font-body-md text-body-md transition-all shadow-inner outline-none" placeholder="Confirm password string" type="password"/>
+</div>
+</div>
+</div>
+<!-- Password Policy Checklist -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1.5 font-label-sm text-label-sm text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Minimum 14 characters in length</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Includes regulatory special token (e.g., #, $, @, %)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Cannot match previous 8 SBP security rotations</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-lg py-2.5 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">sync_lock</span>
+            Update Portal Password
+          </button>
+</div>
+<!-- 2FA Enrolment & Manual Secret Card (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Two-Factor Authentication (2FA)</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold tracking-wide">ENABLED &amp; ACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mandatory hardware or TOTP authentication under SBP Circular No. CPD/2024-09.</p>
+</div>
+<!-- Interactive Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-2fa" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Setup & Key Verification Container -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col sm:flex-row items-center gap-space-lg">
+<!-- Simulated High-Contrast QR Code for Authenticator Apps -->
+<div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col items-center flex-shrink-0">
+<div class="w-36 h-36 bg-primary-container p-2 rounded-lg flex items-center justify-center">
+<!-- Inline Crisp Vector QR Code Mock -->
+<svg class="w-full h-full text-surface-container-lowest fill-current" viewbox="0 0 100 100">
+<rect fill="currentColor" height="30" width="30" x="0" y="0"></rect>
+<rect fill="#0f2444" height="20" width="20" x="5" y="5"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="70" y="0"></rect>
+<rect fill="#0f2444" height="20" width="20" x="75" y="5"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="10"></rect>
+<rect fill="currentColor" height="30" width="30" x="0" y="70"></rect>
+<rect fill="#0f2444" height="20" width="20" x="5" y="75"></rect>
+<rect fill="currentColor" height="10" width="10" x="10" y="80"></rect>
+<rect fill="currentColor" height="20" width="10" x="35" y="10"></rect>
+<rect fill="currentColor" height="10" width="15" x="50" y="5"></rect>
+<rect fill="currentColor" height="10" width="25" x="40" y="35"></rect>
+<rect fill="currentColor" height="25" width="10" x="70" y="40"></rect>
+<rect fill="currentColor" height="15" width="15" x="15" y="40"></rect>
+<rect fill="currentColor" height="20" width="10" x="45" y="55"></rect>
+<rect fill="currentColor" height="10" width="25" x="65" y="75"></rect>
+<rect fill="currentColor" height="10" width="10" x="80" y="60"></rect>
+<rect fill="currentColor" height="15" width="15" x="35" y="80"></rect>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-2 text-center">Google / MS Authenticator</span>
+</div>
+<!-- Manual Enrolment Details -->
+<div class="flex flex-col gap-2 flex-grow w-full">
+<span class="font-label-md text-label-md text-primary font-semibold">Manual Secret Configuration</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">If unable to scan optical barcode, input this alphanumeric seed into your certified TOTP vault.</p>
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-lg mt-1 shadow-inner">
+<code class="font-legal-code text-legal-code text-primary font-semibold flex-1 tracking-wider select-all">
+                  SBP-SEC-9942-X7K1-AUTH-2024
+                </code>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="navigator.clipboard.writeText('SBP-SEC-9942-X7K1-AUTH-2024')" title="Copy to clipboard" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                  Copy
+                </button>
+</div>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant text-xs">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span>SHA-256 HMAC Algorithm with 30s Time Step</span>
+</div>
+</div>
+</div>
+<!-- Backup Emergency Codes -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">key</span>
+<span class="font-label-md text-label-md font-semibold text-primary">Emergency Vault Recovery Codes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                8 single-use hardware bypass keys remain unconsumed for this compliance seat.
+              </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+                Download Codes (.TXT)
+              </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-secondary font-label-md text-label-md transition-colors" title="Print Vault Keys" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+</button>
+</div>
+</div>
+<!-- Critical Security Actions / Deactivation Modal Trigger -->
+<div class="p-space-sm bg-error-container/40 rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-xl">warning</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Deactivating 2FA requires direct ombudsman compliance clearance and logs an automatic audit alert.
+              </p>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest hover:bg-error hover:text-on-error text-error font-label-md text-label-md font-semibold transition-colors flex-shrink-0 shadow-sm" type="button">
+              Disable 2FA
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. APPEARANCE & ACCESSIBILITY SECTION -->
+<section class="tab-content flex flex-col gap-space-lg" id="section-appearance">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Theme Segmented Radio Cards (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Interface Theme &amp; Luminance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select high-legibility ambient profiles designed for central banking monitors.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-space-sm">
+<!-- Light Mode Option -->
+<label class="cursor-pointer group relative flex flex-col">
+<input checked="" class="peer sr-only" name="theme_selection" type="radio" value="light"/>
+<div class="p-space-md rounded-xl bg-surface-container-low peer-checked:bg-surface-container-high transition-all shadow-sm flex flex-col gap-3">
+<div class="h-24 w-full rounded-lg bg-white p-2.5 flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between">
+<div class="w-8 h-2 bg-slate-300 rounded"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
+</div>
+<div class="space-y-1">
+<div class="w-3/4 h-2 bg-slate-200 rounded"></div>
+<div class="w-1/2 h-2 bg-slate-200 rounded"></div>
+</div>
+<div class="w-full h-3 bg-slate-800 rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">light_mode</span>
+                    Light Canvas
+                  </span>
+<span class="material-symbols-outlined text-primary text-base font-bold">check_circle</span>
+</div>
+<span class="text-xs text-on-surface-variant">Default high-contrast daylight document standard.</span>
+</div>
+</label>
+<!-- Dark Mode Option -->
+<label class="cursor-pointer group relative flex flex-col">
+<input class="peer sr-only" name="theme_selection" type="radio" value="dark"/>
+<div class="p-space-md rounded-xl bg-surface-container-low peer-checked:bg-surface-container-high transition-all shadow-sm flex flex-col gap-3">
+<div class="h-24 w-full rounded-lg bg-slate-900 p-2.5 flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between">
+<div class="w-8 h-2 bg-slate-700 rounded"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-slate-600"></div>
+</div>
+<div class="space-y-1">
+<div class="w-3/4 h-2 bg-slate-800 rounded"></div>
+<div class="w-1/2 h-2 bg-slate-800 rounded"></div>
+</div>
+<div class="w-full h-3 bg-slate-700 rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">dark_mode</span>
+                    Deep Navy Slate
+                  </span>
+<span class="material-symbols-outlined text-outline-variant text-base">radio_button_unchecked</span>
+</div>
+<span class="text-xs text-on-surface-variant">Reduced glare for prolonged audit shifts.</span>
+</div>
+</label>
+<!-- System Auto Option -->
+<label class="cursor-pointer group relative flex flex-col">
+<input class="peer sr-only" name="theme_selection" type="radio" value="system"/>
+<div class="p-space-md rounded-xl bg-surface-container-low peer-checked:bg-surface-container-high transition-all shadow-sm flex flex-col gap-3">
+<div class="h-24 w-full rounded-lg bg-gradient-to-r from-slate-200 to-slate-800 p-2.5 flex flex-col justify-between shadow-inner">
+<div class="flex items-center justify-between">
+<div class="w-8 h-2 bg-slate-400 rounded"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-slate-500"></div>
+</div>
+<div class="space-y-1">
+<div class="w-3/4 h-2 bg-slate-300 rounded opacity-75"></div>
+<div class="w-1/2 h-2 bg-slate-400 rounded opacity-75"></div>
+</div>
+<div class="w-full h-3 bg-slate-600 rounded"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">desktop_windows</span>
+                    System Sync
+                  </span>
+<span class="material-symbols-outlined text-outline-variant text-base">radio_button_unchecked</span>
+</div>
+<span class="text-xs text-on-surface-variant">Mirrors your workstation OS appearance.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Accessibility & Legibility Configuration (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">accessibility_new</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Accessibility &amp; Sizing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Statutory Web Accessibility Guidelines (WCAG 2.1 AAA).</p>
+</div>
+</div>
+<!-- Font Slider Control -->
+<div class="mt-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Regulatory Text Scaling</label>
+<span class="font-legal-code text-legal-code bg-surface-container px-2 py-0.5 rounded text-primary" id="font-scale-indicator">100% (Standard)</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" max="130" min="90" oninput="document.getElementById('font-scale-indicator').textContent = this.value + '%'" step="10" type="range" value="100"/>
+<div class="flex justify-between text-xs text-secondary font-label-sm text-label-sm">
+<span>90% Compact</span>
+<span>100% Default</span>
+<span>130% High Legibility</span>
+</div>
+</div>
+<!-- High Contrast Text Toggle -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg mt-2">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Maximum Contrast Grayscale</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Removes subtle slate tints in legal briefs</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Monospace Legal Codepoints Toggle -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Monospace Citation Rendering</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Format BCO sections in tabular monospace</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors" type="button">
+              Reset Accessibility Defaults
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. NOTIFICATIONS & REGULATORY ALERTS SECTION -->
+<section class="tab-content flex flex-col gap-space-lg" id="section-notifications">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Regulatory Dispatch &amp; Ombudsman Alerting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Statutory notifications sent via encrypted institutional telemetry.</p>
+</div>
+<span class="font-legal-code text-legal-code text-secondary">NOTIFICATION-ROUTING-STATION</span>
+</div>
+<div class="space-y-space-md">
+<!-- Item 1 -->
+<div class="flex items-start justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-start gap-space-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined">gavel</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary">Ombudsman Escalation Summons</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Immediate SMS &amp; Email dispatch when a disputed complaint exceeds statutory resolution deadlines (Circular CPD-04).</p>
+<div class="flex items-center gap-3 mt-2 text-xs font-legal-code text-secondary">
+<span>Priority: URGENT</span>
+<span>Channel: SMS &amp; Certified SBP Mail</span>
+</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-start gap-space-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined">description</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary">Banking Companies Ordinance Clause Updates</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Weekly digest of newly amended statutory rules, prudential regulations, and legal precedents.</p>
+<div class="flex items-center gap-3 mt-2 text-xs font-legal-code text-secondary">
+<span>Cadence: Every Monday 08:00 PKT</span>
+<span>Channel: Digest PDF</span>
+</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start justify-between p-space-md bg-surface-container-low rounded-xl">
+<div class="flex items-start gap-space-md">
+<span class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined">security_update_warning</span>
+</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary">Anomalous Session Ingestion</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Security alerts triggered by login attempts from outside central commercial banking subnet ranges.</p>
+<div class="flex items-center gap-3 mt-2 text-xs font-legal-code text-secondary">
+<span>Mandatory Regulatory Telemetry</span>
+</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-not-allowed flex-shrink-0">
+<input checked="" class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-11 h-6 bg-primary opacity-60 rounded-full after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:rounded-full after:h-5 after:w-5"></div>
+</label>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end gap-space-sm pt-space-md">
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">send</span>
+            Save Dispatch Matrix
+          </button>
+</div>
+</div>
+</section>
+<!-- Bottom Statutory Disclaimer & Compliance Seal -->
+<div class="mt-space-xl p-space-lg rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-3xl text-secondary">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Banking Companies Ordinance Compliance Seal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All configuration changes made within this workspace are cryptographically hashed and forwarded to the State Bank internal inspectorate ledger.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-legal-code text-legal-code text-on-surface-variant bg-surface-container-high px-3 py-1.5 rounded-lg">HASH: e49a..b318-2024</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tabId) {
+    // Hide all tab contents
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+      content.classList.add('hidden');
+    });
+
+    // Reset tab button states
+    const buttons = document.querySelectorAll('.tab-trigger');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    // Show selected section
+    const targetSection = document.getElementById('section-' + tabId);
+    if (targetSection) {
+      targetSection.classList.remove('hidden');
+    }
+
+    // Set active button styles
+    const targetBtn = document.getElementById('tab-btn-' + tabId);
+    if (targetBtn) {
+      targetBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+      targetBtn.classList.remove('text-on-surface-variant');
+    }
+  }
+
+  // Initialize tabs: default to Profile
+  document.addEventListener('DOMContentLoaded', () => {
+    switchTab('profile');
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col gap-space-xs text-center md:text-left"><span class="font-legal-code text-legal-code text-on-surface-variant">State Bank of Pakistan Consumer Protection Department · Circular No. CPD/2024-09 · Inquiries: cpd.helpdesk@sbp.org.pk</span><span class="font-body-sm text-body-sm text-outline">Statutory Regulatory Gateway operating under the Banking Companies Ordinance (1962). All AI syntheses are auditable records.</span></div><div class="flex items-center gap-space-md text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Apex Financial Regulator</span></div></div></footer></body></html>
